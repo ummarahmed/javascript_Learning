@@ -1,4 +1,13 @@
 // Primitive data types
+/*
+1. Null
+2. Number
+3. Boolean
+4. BigInt
+5. String
+6. Symbol
+7. Unassigned
+*/
 
 // String
 let myName = "Ummar Ahmed";
