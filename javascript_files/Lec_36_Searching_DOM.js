@@ -39,3 +39,4 @@ x=document.getElementsByClassName("card-title");  // Find the elements
 console.log(document.getElementsByTagName("a")); // will return all anchor tags
 console.log(document.body.getElementsByTagName("a"));// it will search in body only instead of whole document
 console.log(document.querySelector(".card-title").getElementsByTagName("a"));//it will only search with in card-title area and return only its anchor tags
+console.log(document.getElementsByName("card"));// it will return all the values having this name
