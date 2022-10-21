@@ -9,3 +9,10 @@ firstId.insertAdjacentHTML("beforeend", `<div class="test">beforeend</div>`);
 firstId.insertAdjacentHTML("afterbegin",  `<div class="test">afterbegin</div>`)
 firstId.insertAdjacentHTML("afterend", `<div class="test">afterend</div>`);
 
+// firstId.insertAdjacentElement("afterbegin",) //
+// firstId.insertAdjacentText("afterbegin","Hello Developers");
+
+/**
+ * we can apply these position parameters on insertion of HTML, element and text
+ */
+
