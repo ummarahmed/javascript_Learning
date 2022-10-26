@@ -1,0 +1,16 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.bulb {
+    height: 340px;
+    width: 340px;
+    background-color: aliceblue;
+}
+
+.bulbOn {
+    height: 340px;
+    width: 340px;
+    background-color: rgb(246, 246, 22);
+}
