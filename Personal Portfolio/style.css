@@ -5,9 +5,9 @@
     margin: 0;
     padding: 0;
     
-}
+} 
 .sidebar{
-    position: absolute;
+    position: fixed;
     background-color: rgb(221, 220, 220);
     /* width: 200px; */
     height: 100vh;
@@ -21,7 +21,7 @@
 /* .sidebar nav{
     padding: 30px;
 } */
-li{
+.sidebar nav li{
     padding: 30px;
 }
 .sidebar nav li{
@@ -34,16 +34,16 @@ li{
     color: black;
 }
 
-  ul li:hover,
-  ul li:hover a {
+.sidebar nav ul li:hover,
+.sidebar nav ul li:hover a {
   background-color: #13118C;
   color: white; 
   font-weight: bold;
 }
 .main{
     /* background-color: yellow; */
-    width: 90vw;
-    height: 100vh;
+    width: 100vw;
+    /* height: 100vh; */
 /*
     background-image: url("ummar_ahmed1.JPG");
 
@@ -56,17 +56,66 @@ li{
   background-size: cover;
  */ 
 }
+.navBar{
+    height: 30px; /* 185px*/
+    background-color: red;
+    padding-top: 10px;
+}
+
+#menu-outer {
+    /* height: 84px; */
+    /* background: url(images/bar-bg.jpg) repeat-x; */
+}
+
+.navTable {
+    display: table;
+    /* Allow the centering to work */
+    margin: 0 auto;
+    margin-left: 110px;
+}
+
+#horizontal-list {
+    /* min-width: 696px; */
+    /* list-style: none; */
+    /* padding-top: 15px; */
+    
+}
+
+#horizontal-list li {
+    /* display: inline; */
+    padding: 12px 30px;
+    list-style: none;
+    
+    
+}
+#horizontal-list li a{
+    text-decoration: none;
+    color: white;
+    /* padding-top: 15px; */
+}
+#horizontal-list li:hover{
+    background-color: green;
+    text-decoration: none;
+  color: white; 
+  /* font-weight: bold; */
+}
+
 
 .container{
     display: flex;
 }
 .infoContainer{
     /* background-color: rgb(183, 205, 97); */
-    height: 58vh;
-    width: 80vw;
-    margin: 100px auto;
+    /* height: 58vh; */
+    width: 90%;
+    padding: 100px;/* margin: 100px; */
+    
     display: flex;
     justify-content: space-around;
+}
+.align_centre{
+    text-align: center;
+    
 }
 .devInfo{
     font-size: 16px;
@@ -168,9 +217,12 @@ li{
 .blogItem{
     margin: 20px;
     font-family: 'Inter', sans-serif;
+    /* box-shadow :10px 10px 5px #d4d8da; */
+    padding: 10px;
 }
 .blogContainer{
     margin: 88px;
+    width: 90vw;
 }
 /* .blogContainer h1{ */
     h1{
@@ -191,6 +243,8 @@ li{
 .intro p{
     font-family: 'Source Code Pro', monospace;
     margin: 12px;
+    font-size: 15px;
+    padding-bottom: 15px;
 }
 .skillContainer{
     margin: 12px;
@@ -204,31 +258,147 @@ li{
 }
 .skill{
     width: 315px;
-    height: 7px;
-    background-color: red;
-    border: 1px black solid;
+    height: 12px;
+    /* background-color: red; */
+    border: 1px none solid;
+}
+.outerSkill{
+    border: rgb(103, 100, 100) 1px groove;
+    width: 300px;
+    height: 12px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+}
+.form-control{
+    box-shadow: 1px 1px 5px;
 }
 .hundred{
     width: 256px;
-    background-color: blueviolet;
+    background-color: rgb(121, 223, 138);
+    opacity: 0.3;
+    border-radius: 5px;
+    animation-name: animHundred;
+    animation-duration: 2s;
 }
+@keyframes animHundred {
+    from {width:0px;}
+    to {width: 256px;}
+  }
+.seventyFive{
+    width: 210px;
+    background-color: aqua;
+    opacity: 0.3;
+    border-radius: 5px;
+    animation-name: animseventyFive;
+    animation-duration: 2s;
+}
+@keyframes animseventyFive {
+    from {width:0px;}
+    to {width: 210px;}
+  }
 .fifty{
     width: 125px;
-    background-color: aqua;
+    background-color: rgb(238, 123, 84);
+    opacity: 0.5;
+    border-radius: 5px;
+    animation-name: animfifty;
+    animation-duration: 2s;
 }
+@keyframes animfifty {
+    from {width:0px;}
+    to {width: 125px;}
+  }
 .twentyFive{
     width: 75px;
-    background-color: yellow;
+    background-color: rgb(255, 38, 0);
+    opacity: 0.7;
+    border-radius: 5px;
+    animation-name: animtwentyFive;
+    animation-duration: 2s;
 }
+@keyframes animtwentyFive {
+    from {width:0px;}
+    to {width: 75px;}
+  }
 .sidebarGo{
     transform: translate(-200px, 0px);
     position: absolute
 }
 .hamburger{
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     top: 10px;
     left: 10px;
+}
+.roundImg{
+    border-radius: 50%;
+    width:100px
+}
+.projRoundImg{
+    border-radius: 6%;
+    width:50%;
+    margin-top: 30px;
+}
+.service{
+    width: 300px;
+    text-align: center;
+    float: left;
+    margin: 30px;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color:rgb(221, 220, 220);
+    box-shadow: 10px 10px 5px;
+}
+.project{
+    width: 45%;
+    text-align: center;
+    float: left;
+    margin: 30px;
+    /* border: 1px black solid; */
+    border-radius: 15px;
+    
+    background-color:rgb(221, 220, 220);
+    box-shadow: 6px 6px 25px;
+}
+.serviceDesc{
+    font-size: 10px;
+    margin: 10px;
+    font-style: italic;
+}
+.serviceHead{
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+}
+.backColor{
+    background-color: white;
+}
+.footer {
+    text-align: center;
+    padding-top: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 24px;
+    color: white;
+    background: #13118C;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+
+}
+
+.blogDescImg p{
+    /* background-color: red; */
+    width: 55em;
+    float: left;
+    margin-top: 20px;
+}
+.blogDescImg img{
+    width: 7em;
+    margin-left: 60px;
+    border-radius: 20px;
 }
 @media (max-width: 790px){
     *{
@@ -242,7 +412,7 @@ li{
         font-size: 5px;
     }
     .btn{
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     /* .hello{
         font-size: 40px;
@@ -250,12 +420,24 @@ li{
     .devInfo{
         margin-top: 125px;
         font-size: 10px;
+        width: 60vw;
     }
     .devPic{
         display: none;
     }
     .intro, .blogContainer, .contactform{
         margin: 25px;
+    }
+    .blogDescImg p {
+        /* background-color: red; */
+        width: inherit;
+        float: left;
+        margin-top: 20px;
+    }
+    .blogDescImg img {
+        width: 7em;
+        /* margin-left: 1px; */
+        border-radius: 20px;
     }
 }
 
