@@ -13,7 +13,7 @@
     height: 100vh;
     font-family: 'Inter', sans-serif;
     padding-top: 50px;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.2s ease-in;
 }
 .cross{
     padding-left: 100px;
@@ -36,34 +36,23 @@
 
 .sidebar nav ul li:hover,
 .sidebar nav ul li:hover a {
-  background-color: #13118C;
+  background-color: rgb(36, 34, 34);
   color: white; 
   font-weight: bold;
 }
 .main{
-    /* background-color: yellow; */
-    width: 100vw;
-    /* height: 100vh; */
-/*
-    background-image: url("ummar_ahmed1.JPG");
-
-  
-  height: 100%; 
-
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- */ 
+    width: 100%;
 }
 .navBar{
     height: 30px; /* 185px*/
-    background-color: red;
+    width: 100%;
+    background: #13118C;
     padding-top: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
 #menu-outer {
-    /* height: 84px; */
+    height: 84px;
     /* background: url(images/bar-bg.jpg) repeat-x; */
 }
 
@@ -82,9 +71,9 @@
 }
 
 #horizontal-list li {
-    /* display: inline; */
-    padding: 12px 30px;
-    list-style: none;
+    display: inline;
+    padding: 10px 30px;
+    /* list-style: none; */
     
     
 }
@@ -94,22 +83,20 @@
     /* padding-top: 15px; */
 }
 #horizontal-list li:hover{
-    background-color: green;
-    text-decoration: none;
-  color: white; 
-  /* font-weight: bold; */
+  background-color: rgb(36, 34, 34);
+  /* color: #13118C;  */
+  /* color: green; */
+  /* text-decoration: none; */
 }
 
 
 .container{
     display: flex;
+    /* background-color: beige;
+    width: 100%; */
 }
 .infoContainer{
-    /* background-color: rgb(183, 205, 97); */
-    /* height: 58vh; */
-    width: 90%;
-    padding: 100px;/* margin: 100px; */
-    
+    padding: 100px;
     display: flex;
     justify-content: space-around;
 }
@@ -144,6 +131,10 @@
     margin-top: 34px;
     font-size: 7px;
 }
+.btn_a{
+    text-decoration: none;
+    color: white;
+}
 .btn{
     padding: 9px 14px;
     border-radius: 20px;
@@ -160,14 +151,15 @@
     margin: 10px 0;
 }
 .btn:hover{
-    background-color: white;
-    color: #13118C;
+    background-color: rgb(36, 34, 34);
+    color: white;
 }
 .devPic img{
-    height: 58vh;
-    -webkit-transform: scaleX(-1);
+  height: 58vh;
+  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   border-radius: 35%;
+  
 }
 
 .contactform{
@@ -191,7 +183,7 @@
     font-size: 11px;
     color: midnightblue;
     margin: 0 5px;
-    padding: 3px 0 0 0;
+    padding: 8px 0 0 0;
 }
 /* #clientemail, #clientphone{ */
     .contactform form div input{
@@ -226,7 +218,7 @@
 }
 /* .blogContainer h1{ */
     h1{
-    margin: 23px;
+    margin: 12px;
     font-family: 'Inter', sans-serif;
 }
 /* .blogItem p{ */
@@ -400,43 +392,34 @@
     margin-left: 60px;
     border-radius: 20px;
 }
-@media (max-width: 790px){
-    *{
-        /* background-color: red; */
-    }
-    /* .sidebar{
-        transform: translate(-200px, 0px);
-        position: absolute
-    } */
+@media screen and (max-width: 790px) and (min-width: 234px){
     .buttons{
         font-size: 5px;
     }
-    .btn{
-        /* margin-top: 20px; */
-    }
-    /* .hello{
-        font-size: 40px;
-    } */
     .devInfo{
         margin-top: 125px;
         font-size: 10px;
         width: 60vw;
     }
-    .devPic{
-        display: none;
+    .devPic img{
+        height: 30vh;
+    }
+    #horizontal-list li {
+        padding: 0px 30px;
+    }
+    .navBar{
+        height: 100px;
     }
     .intro, .blogContainer, .contactform{
         margin: 25px;
     }
     .blogDescImg p {
-        /* background-color: red; */
         width: inherit;
         float: left;
         margin-top: 20px;
     }
     .blogDescImg img {
         width: 7em;
-        /* margin-left: 1px; */
         border-radius: 20px;
     }
 }

@@ -33,57 +33,44 @@ document.querySelector(".hamburger").addEventListener("click", () => {
     }
 })
 
-
 document.querySelector(".service1").addEventListener("mouseover",()=>{
-    console.log("mouse in")
     document.querySelector(".service1").classList.toggle("backColor") 
 })
 document.querySelector(".service1").addEventListener("mouseout",()=>{
-    console.log("mouse out")
     document.querySelector(".service1").classList.toggle("backColor") 
 })
 
 document.querySelector(".service2").addEventListener("mouseover",()=>{
-    console.log("mouse in")
     document.querySelector(".service2").classList.toggle("backColor") 
 })
 document.querySelector(".service2").addEventListener("mouseout",()=>{
-    console.log("mouse out")
     document.querySelector(".service2").classList.toggle("backColor") 
 })
 
 document.querySelector(".service3").addEventListener("mouseover",()=>{
-    console.log("mouse in")
     document.querySelector(".service3").classList.toggle("backColor") 
 })
 document.querySelector(".service3").addEventListener("mouseout",()=>{
-    console.log("mouse out")
     document.querySelector(".service3").classList.toggle("backColor") 
 })
 
 document.querySelector(".service4").addEventListener("mouseover",()=>{
-    console.log("mouse in")
     document.querySelector(".service4").classList.toggle("backColor") 
 })
 document.querySelector(".service4").addEventListener("mouseout",()=>{
-    console.log("mouse out")
     document.querySelector(".service4").classList.toggle("backColor") 
 })
 
 document.querySelector(".service5").addEventListener("mouseover",()=>{
-    console.log("mouse in")
     document.querySelector(".service5").classList.toggle("backColor") 
 })
 document.querySelector(".service5").addEventListener("mouseout",()=>{
-    console.log("mouse out")
     document.querySelector(".service5").classList.toggle("backColor") 
 })
 
 document.querySelector(".service6").addEventListener("mouseover",()=>{
-    console.log("mouse in")
     document.querySelector(".service6").classList.toggle("backColor") 
 })
 document.querySelector(".service6").addEventListener("mouseout",()=>{
-    console.log("mouse out")
     document.querySelector(".service6").classList.toggle("backColor") 
 })

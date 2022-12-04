@@ -10,34 +10,38 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="sidebar sidebarGo">
+    <section class="container">
+        <section class="sidebar sidebarGo">
             <nav>
                 <ul>
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="intro.html">
-                        <li>My Intro</li>
-                    </a>
-                    <a href="service.html">
-                        <li>Services</li>
-                    </a>
-                    <a href="blog.html">
-                        <li>Blog</li>
-                    </a>
-                    <a href="contact.html">
-                        <li>Contact Me</li>
-                    </a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">My Intro</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </nav>
-        </div><!-- sidebar div-->
-        <div class="main">
+        </section><!-- sidebar div-->
+        <section class="main">
             <div class="hamburger">
                 <img class="ham" src="ham.png" alt="" width="23">
                 <img class="cross" src="cross.png" alt="" width="23">
             </div>
-            <div class="infoContainer">
+            <!-- navigation bar-->
+            <section class="navBar">
+                <div id="menu-outer">
+                    <div class="navTable">
+                      <ul id="horizontal-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="intro.html">My Intro</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </section> <!-- end - navigation bar-->
+            <section class="infoContainer">
                 <div class="services">
                     <h1 class="align_centre">My Services</h1>
                     <p class="align_centre">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -86,10 +90,10 @@
                         </div>
                     </div>
                 </div>
-            </div><!--infoContainer-->
+            </section><!--infoContainer-->
             <div class="footer">Copyrights &#169; UMMAR_AHMED@student.jamk.fi | Finland</div>
-        </div>
-    </div>
+        </section>
+    </section>
     <script src="index.js"></script>
 </body>
 
