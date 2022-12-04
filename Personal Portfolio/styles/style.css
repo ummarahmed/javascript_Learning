@@ -1,141 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Source+Code+Pro:wght@300&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
-    
-} 
-.sidebar{
+}
+
+/* side bar  */
+.sidebar {
     position: fixed;
     background-color: rgb(221, 220, 220);
-    /* width: 200px; */
     height: 100vh;
     font-family: 'Inter', sans-serif;
     padding-top: 50px;
     transition: transform 0.2s ease-in;
 }
-.cross{
+.cross {
     padding-left: 100px;
 }
-/* .sidebar nav{
-    padding: 30px;
-} */
-.sidebar nav li{
+.sidebar nav li {
     padding: 30px;
 }
-.sidebar nav li{
+.sidebar nav li {
     list-style: none;
     font-size: 15px;
-    /* padding: 20px 0; */
 }
-.sidebar nav a{
+.sidebar nav a {
     text-decoration: none;
     color: black;
 }
-
 .sidebar nav ul li:hover,
 .sidebar nav ul li:hover a {
-  background-color: rgb(36, 34, 34);
-  color: white; 
-  font-weight: bold;
+    background-color: rgb(36, 34, 34);
+    color: white;
+    font-weight: bold;
 }
-.main{
+/* main div */
+.main {
     width: 100%;
 }
-.navBar{
-    height: 30px; /* 185px*/
+/* navigation bar */
+.navBar {
+    height: 30px;
     width: 100%;
     background: #13118C;
     padding-top: 10px;
     font-family: 'Inter', sans-serif;
 }
-
 #menu-outer {
     height: 84px;
-    /* background: url(images/bar-bg.jpg) repeat-x; */
 }
-
 .navTable {
     display: table;
-    /* Allow the centering to work */
     margin: 0 auto;
     margin-left: 110px;
 }
-
-#horizontal-list {
-    /* min-width: 696px; */
-    /* list-style: none; */
-    /* padding-top: 15px; */
-    
-}
-
 #horizontal-list li {
     display: inline;
     padding: 10px 30px;
-    /* list-style: none; */
-    
-    
 }
-#horizontal-list li a{
+#horizontal-list li a {
     text-decoration: none;
     color: white;
-    /* padding-top: 15px; */
 }
-#horizontal-list li:hover{
-  background-color: rgb(36, 34, 34);
-  /* color: #13118C;  */
-  /* color: green; */
-  /* text-decoration: none; */
+#horizontal-list li:hover {
+    background-color: rgb(36, 34, 34);
 }
-
-
-.container{
+.container {
     display: flex;
-    /* background-color: beige;
-    width: 100%; */
 }
-.infoContainer{
+/* information container  */
+.infoContainer {
     padding: 100px;
     display: flex;
     justify-content: space-around;
 }
-.align_centre{
+.align_centre {
     text-align: center;
-    
 }
-.devInfo{
+/* developer information  */
+.devInfo {
     font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-family: 'Source Code Pro', monospace;
 }
-.hello{
+ /* introduction text style  */
+.hello {
     font-size: 1.5em;
 }
-.name{
+.name {
     font-size: 2.5em;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
 }
-.about{
+.about {
     font-size: 2em;
 }
-.moreabout{
+.moreabout {
     font-size: 1.2em;
     margin-top: 23px;
     font-family: 'Inter', sans-serif;
 }
-.buttons{
+/* buttons design  */
+.buttons {
     margin-top: 34px;
     font-size: 7px;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
 }
-.btn_a{
+.btn_a {
     text-decoration: none;
     color: white;
 }
-.btn{
+.btn {
     padding: 9px 14px;
     border-radius: 20px;
     color: white;
@@ -145,126 +124,118 @@
     margin: 3px 3px;
     cursor: pointer;
 }
-.btn-sm{
+.btn-sm {
     font-size: 10px;
     padding: 7px 13px;
     margin: 10px 0;
 }
-.btn:hover{
+/* hover effects  */
+.btn:hover {
     background-color: rgb(36, 34, 34);
     color: white;
 }
-.devPic img{
-  height: 58vh;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  border-radius: 35%;
-  
+.devPic img {
+    height: 58vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border-radius: 35%;
 }
-
-.contactform{
+/* contact form design  */
+.contactform {
     padding: 0 34px;
     padding-top: 50px;
     font-family: 'Inter', sans-serif;
     margin: 88px;
 }
-.contactform h1{
+.contactform h1 {
     font-family: 'Source Code Pro', monospace;
-    /* padding: 12px 0; */
 }
-
-.contactform form div{
+.contactform form div {
     padding: 10px 0;
     display: flex;
     flex-direction: column;
 }
-
-#emailHelp{
+#emailHelp {
     font-size: 11px;
     color: midnightblue;
     margin: 0 5px;
     padding: 8px 0 0 0;
 }
-/* #clientemail, #clientphone{ */
-    .contactform form div input{
-    /* width: 26vw; */
+.contactform form div input {
     border-radius: 5px;
     font-size: 17px;
     padding: 3px;
     margin: 6px 0 0 0;
 }
-.contactform form div{
+.contactform form div {
     margin: 0 40px;
 }
-
-#form-check{
+#form-check {
     flex-direction: row;
-    /* background-color: red; */
 }
-
-#form-check input{
+#form-check input {
     width: 24px;
     margin: 3px 0;
 }
-.blogItem{
+/* blog page design  */
+.blogItem {
     margin: 20px;
     font-family: 'Inter', sans-serif;
-    /* box-shadow :10px 10px 5px #d4d8da; */
     padding: 10px;
 }
-.blogContainer{
+.blogContainer {
     margin: 88px;
     width: 90vw;
 }
-/* .blogContainer h1{ */
-    h1{
+/* headings and paragraphs design  */
+h1 {
     margin: 12px;
     font-family: 'Inter', sans-serif;
 }
-/* .blogItem p{ */
-    p{
+p {
     font-family: 'Source Code Pro', monospace;
 }
-.intro{
+.intro {
     margin: 88px;
 }
-.intro h2{
+.intro h2 {
     font-family: 'Inter', sans-serif;
     margin: 12px;
 }
-.intro p{
+.intro p {
     font-family: 'Source Code Pro', monospace;
     margin: 12px;
     font-size: 15px;
     padding-bottom: 15px;
 }
-.skillContainer{
+/* skill container design  */
+.skillContainer {
     margin: 12px;
-    
 }
-.skillItem{
+.skillItem {
     display: flex;
     align-items: center;
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
 }
-.skill{
+.skill {
     width: 315px;
     height: 12px;
     /* background-color: red; */
     border: 1px none solid;
 }
-.outerSkill{
+.outerSkill {
     border: rgb(103, 100, 100) 1px groove;
     width: 300px;
     height: 12px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px;
 }
-.form-control{
+.form-control {
     box-shadow: 1px 1px 5px;
 }
-.hundred{
+/* personal skills bar design and animations  */
+.hundred {
     width: 256px;
     background-color: rgb(121, 223, 138);
     opacity: 0.3;
@@ -273,10 +244,13 @@
     animation-duration: 2s;
 }
 @keyframes animHundred {
-    from {width:0px;}
-    to {width: 256px;}
-  }
-.seventyFive{
+    from {
+        width: 0px;
+    }    to {
+        width: 256px;
+    }
+}
+.seventyFive {
     width: 210px;
     background-color: aqua;
     opacity: 0.3;
@@ -285,10 +259,13 @@
     animation-duration: 2s;
 }
 @keyframes animseventyFive {
-    from {width:0px;}
-    to {width: 210px;}
-  }
-.fifty{
+    from {
+        width: 0px;
+    }    to {
+        width: 210px;
+    }
+}
+.fifty {
     width: 125px;
     background-color: rgb(238, 123, 84);
     opacity: 0.5;
@@ -297,10 +274,13 @@
     animation-duration: 2s;
 }
 @keyframes animfifty {
-    from {width:0px;}
-    to {width: 125px;}
-  }
-.twentyFive{
+    from {
+        width: 0px;
+    }    to {
+        width: 125px;
+    }
+}
+.twentyFive {
     width: 75px;
     background-color: rgb(255, 38, 0);
     opacity: 0.7;
@@ -309,29 +289,33 @@
     animation-duration: 2s;
 }
 @keyframes animtwentyFive {
-    from {width:0px;}
-    to {width: 75px;}
-  }
-.sidebarGo{
+    from {
+        width: 0px;
+    }    to {
+        width: 75px;
+    }
+}
+/* side bar show and hide */
+.sidebarGo {
     transform: translate(-200px, 0px);
     position: absolute
 }
-.hamburger{
+.hamburger {
     position: fixed;
     cursor: pointer;
     top: 10px;
     left: 10px;
 }
-.roundImg{
+.roundImg {
     border-radius: 50%;
-    width:100px
+    width: 100px
 }
-.projRoundImg{
+.projRoundImg {
     border-radius: 6%;
-    width:50%;
+    width: 50%;
     margin-top: 30px;
 }
-.service{
+.service {
     width: 300px;
     text-align: center;
     float: left;
@@ -339,33 +323,32 @@
     border: 1px black solid;
     border-radius: 15px;
     padding: 20px;
-    background-color:rgb(221, 220, 220);
+    background-color: rgb(221, 220, 220);
     box-shadow: 10px 10px 5px;
 }
-.project{
+.project {
     width: 45%;
     text-align: center;
     float: left;
     margin: 30px;
-    /* border: 1px black solid; */
     border-radius: 15px;
-    
-    background-color:rgb(221, 220, 220);
+    background-color: rgb(221, 220, 220);
     box-shadow: 6px 6px 25px;
 }
-.serviceDesc{
+.serviceDesc {
     font-size: 10px;
     margin: 10px;
     font-style: italic;
 }
-.serviceHead{
+.serviceHead {
     font-size: 20px;
     margin: 10px;
     font-family: 'Inter', sans-serif;
 }
-.backColor{
+.backColor {
     background-color: white;
 }
+/* footer design  */
 .footer {
     text-align: center;
     padding-top: 8px;
@@ -378,49 +361,57 @@
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 11px;
-
 }
-
-.blogDescImg p{
-    /* background-color: red; */
+.blogDescImg p {
     width: 55em;
     float: left;
     margin-top: 20px;
 }
-.blogDescImg img{
+.blogDescImg img {
     width: 7em;
     margin-left: 60px;
     border-radius: 20px;
 }
-@media screen and (max-width: 790px) and (min-width: 234px){
-    .buttons{
+/* responsiveness of website  */
+@media screen and (max-width: 840px) and (min-width: 234px) {
+    .buttons {
         font-size: 5px;
-    }
-    .devInfo{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }    
+    .btn_intr {
+        width: max-content;
+    }    
+    .devInfo {
         margin-top: 125px;
         font-size: 10px;
         width: 60vw;
-    }
-    .devPic img{
+    }    
+    .devPic img {
         height: 30vh;
-    }
-    #horizontal-list li {
+    }    #horizontal-list li {
         padding: 0px 30px;
-    }
-    .navBar{
+    }    
+    .navBar {
         height: 100px;
-    }
-    .intro, .blogContainer, .contactform{
+    }    
+    #horizontal-list li {
+        display: flex;
+        flex-direction: column;
+    }    
+    .intro,
+    .blogContainer,
+    .contactform {
         margin: 25px;
-    }
+    }    
     .blogDescImg p {
         width: inherit;
         float: left;
         margin-top: 20px;
-    }
+    }    
     .blogDescImg img {
         width: 7em;
         border-radius: 20px;
     }
 }
-

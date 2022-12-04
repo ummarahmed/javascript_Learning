@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ummar Ahmed - Backend Developer, Programmer, Cyber Security Lover</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
+    <!--main div-->
     <div class="container">
-        <section class="sidebar sidebarGo">
+        <div class="sidebar sidebarGo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -21,35 +20,34 @@
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </nav>
-        </section><!-- sidebar div-->
-        <section class="main">
+        </div><!-- sidebar div-->
+        <div class="main">
             <div class="hamburger">
-                <img class="ham" src="ham.png" alt="" width="23">
-                <img class="cross" src="cross.png" alt="" width="23">
+                <img class="ham" src="images/ham.png" alt="" width="23">
+                <img class="cross" src="images/cross.png" alt="" width="23">
             </div>
             <!-- navigation bar-->
-            <section class="navBar">
+            <div class="navBar">
                 <div id="menu-outer">
                     <div class="navTable">
-                      <ul id="horizontal-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="intro.html">My Intro</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                      </ul>
+                        <ul id="horizontal-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="intro.html">My Intro</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                  </div>
-            </section> <!-- end - navigation bar-->
-            <section class="intro">
+                </div>
+            </div> <!-- end - navigation bar-->
+            <div class="intro">
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam blanditiis tenetur quas atque minus
-                    debitis
-                    rerum porro. Sequi hic maiores, nostrum eveniet, repudiandae deserunt officiis nulla vero eligendi
-                    cupiditate necessitatibus architecto nihil aperiam. Ratione excepturi dolorum veniam.</p>
+                <p>I am Ummar Ahmed. I am student at JAMK University of Applied Sciencs, Jyväskylä Finland. My Program
+                    is Bachelors in Information and Communication Technology. I am ambitious to be a Software Engineer.
+                </p>
+                <!-- skills description-->
                 <h2>My Skills</h2>
-                <section class="skillContainer">
-
+                <div class="skillContainer">
                     <div class="skillItem">HTML:&#160;&#160;&#160;&#160;&#160;&#160; <div class="outerSkill">
                             <div class="skill hundred"></div>
                         </div>
@@ -66,61 +64,76 @@
                             <div class="skill twentyFive"></div>
                         </div>
                     </div>
-                </section>
-                <!-- TODO: Create a gallery for my projects -->
-                <section class="services">
+                </div>
+                <div class="services">
                     <h1 class="align_centre">My Projects</h1>
-                    <p class="align_centre">A few of my recent projects are here:</p>
+                    <p class="align_centre">I have done my projects in following domains:</p>
                     <div class="offeredServices">
                         <div class="project service1 backColor">
                             <img class="projRoundImg" src="images/imgBackEnd.jpg" alt="Project Image">
-                            <h2 class="serviceHead">Backend Development</h2>
-                            <p class="serviceDesc" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim facilis at.
-                                Error odio debitis accusantium impedit delectus officiis similique accusamus veritatis
-                                magni obcaecati nihil officia labore, molestiae maxime sapiente?</p>
+                            <section>
+                                <h2 class="serviceHead">Backend Development</h2>
+                            <p class="serviceDesc">Back-end Development refers to the server-side development. It
+                                focuses on databases, scripting, website architecture. It contains behind-the-scene
+                                activities that occur when performing any action on a website.</p>
+                            </section>
                         </div>
                         <div class="project service2 backColor">
                             <img class="projRoundImg" src="images/imgWebAppDev.jpg" alt="Project Image">
-                            <h2 class="serviceHead">Web App Development</h2>
-                            <p class="serviceDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim facilis at.
-                                Error odio debitis accusantium impedit delectus officiis similique accusamus veritatis
-                                magni obcaecati nihil officia labore, molestiae maxime sapiente?</p>
+                            <section>
+                                <h2 class="serviceHead">Web App Development</h2>
+                            <p class="serviceDesc">A comprehensive list of tasks to which Web development commonly
+                                refers, may include Web engineering, Web design, Web content development, client
+                                liaison, client-side/server-side scripting, Web server and network security
+                                configuration, and e-commerce development.</p>
+                            </section>
                         </div>
                         <div class="project service3 backColor">
                             <img class="projRoundImg" src="images/imgCrossPlat.jpg" alt="Project Image">
-                            <h2 class="serviceHead">Cross Platform Development</h2>
-                            <p class="serviceDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim facilis at.
-                                Error odio debitis accusantium impedit delectus officiis similique accusamus veritatis
-                                magni obcaecati nihil officia labore, molestiae maxime sapiente?</p>
+                            <div>
+                                <section>
+                                    <h2 class="serviceHead">Cross Platform Development</h2>
+                                    <p class="serviceDesc">Cross-platform development is the practice of developing software
+                                        products or services for multiple platforms or software environments. Engineers and
+                                        developers use various methods to accommodate different operating systems or
+                                        environments for one application or product.</p>
+                                </section>
+                            </div>
                         </div>
                         <div class="project service4 backColor">
                             <img class="projRoundImg" src="images/imgAndroidAppDev.jpg" alt="Project Image">
-                            <h2 class="serviceHead">Android Application Development</h2>
-                            <p class="serviceDesc" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim facilis at.
-                                Error odio debitis accusantium impedit delectus officiis similique accusamus veritatis
-                                magni obcaecati nihil officia labore, molestiae maxime sapiente?</p>
+                            <section>
+                                <h2 class="serviceHead">Android Application Development</h2>
+                            <p class="serviceDesc">Android software development is the process by which applications are
+                                created for devices running the Android operating system. Google states that "Android
+                                apps can be written using Kotlin, Java, and C++ languages" using the Android software
+                                development kit (SDK), while using other languages is also possible.</p>
+                            </section>
                         </div>
                         <div class="project service5 backColor">
                             <img class="projRoundImg" src="images/imgVideoEditing.jpg" alt="Project Image">
-                            <h2 class="serviceHead">Video Editting</h2>
-                            <p class="serviceDesc" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim facilis at.
-                                Error odio debitis accusantium impedit delectus officiis similique accusamus veritatis
-                                magni obcaecati nihil officia labore, molestiae maxime sapiente?</p>
+                            <section>
+                                <h2 class="serviceHead">Video Editting</h2>
+                            <p class="serviceDesc">A Video Editor, or Video Production Editor, is responsible for
+                                reviewing audio and visual footage and using computer software to organize clips into a
+                                cohesive unit.</p>
+                            </section>
                         </div>
                         <div class="project service6 backColor">
                             <img class="projRoundImg" src="images/imgYoutubeCust.jpg" alt="Project Image">
-                            <h2 class="serviceHead">YouTube Channel Customization</h2>
-                            <p class="serviceDesc" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim facilis at.
-                                Error odio debitis accusantium impedit delectus officiis similique accusamus veritatis
-                                magni obcaecati nihil officia labore, molestiae maxime sapiente?</p>
+                            <section>
+                                <h2 class="serviceHead">YouTube Channel Customization</h2>
+                            <p class="serviceDesc">You need to know key factors which attract the viewers. You manage
+                                settings and configution of the channel. It is a quite fun job.</p>
+                            </section>
                         </div>
                     </div>
-                </section>
-            </section>
-            <div class="footer">Copyrights &#169; UMMAR_AHMED@student.jamk.fi | Finland</div>
-        </section>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">Copyrights &#169; AC4636@student.jamk.fi | Finland</footer>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
-
 </html>
