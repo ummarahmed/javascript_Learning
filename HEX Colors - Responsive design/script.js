@@ -10,5 +10,14 @@ function changeColor(){
     // set the color code to text and as background color
     document.getElementById("hex-code").innerText = hexcode;
     document.getElementsByTagName("body")[0].style.background = "#"+hexcode;
+    console.log("Hexcode: "+hexcode);
 
+    var btn_hex = '';
+    for(var i=0; i<6; i++){
+        var btn_index = Math.floor(Math.random()*hex_numbers.length);
+        btn_hex += hex_numbers[btn_index];
+    }
+
+    console.log("btn_hex: "+btn_hex);
+    document.getElementById("change_btn").style.background = "#"+btn_hex;
 }
