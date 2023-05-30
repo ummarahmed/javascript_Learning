@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(37, 155, 155);
+}
+.container {
+    border: 1px rgb(125, 125, 125) solid;
+    background-color: blanchedalmond;
+    /* margin: 10px; */
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+
+}
+.quotes{
+    
+    /* margin: 5px; */
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height: 100%;
+    background-color:#ffbf005e;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 10px 10px gray;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quotes p, .quotes h3{
+    font-size: 1.5rem;
+}
+.button_div{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media(max-width:480px){
+    .quotes p, .quotes h3{
+        font-size: 1rem;
+    }
+}
