@@ -23,26 +23,26 @@ function generate(){
       ];
     
       const authors = [
-        "Nelson Mandela",
-        "Walt Disney",
-        "Steve Jobs",
-        "Eleanor Roosevelt",
-        "James Cameron",
-        "John Lennon",
-        "Chinese Proverb",
-        "Andy Grove",
-        "Babe Ruth",
-        "Thomas Jefferson",
-        "Winston Churchill",
-        "Steve Jobs",
-        "Theodore Roosevelt",
-        "Eleanor Roosevelt",
-        "Sam Levenson",
-        "Pablo Picasso",
-        "Buddha",
-        "Winston Churchill",
-        "Franklin D. Roosevelt",
-        "Mark Zuckerberg"
+        "- Nelson Mandela",
+        "- Walt Disney",
+        "- Steve Jobs",
+        "- Eleanor Roosevelt",
+        "- James Cameron",
+        "- John Lennon",
+        "- Chinese Proverb",
+        "- Andy Grove",
+        "- Babe Ruth",
+        "- Thomas Jefferson",
+        "- Winston Churchill",
+        "- Steve Jobs",
+        "- Theodore Roosevelt",
+        "- Eleanor Roosevelt",
+        "- Sam Levenson",
+        "- Pablo Picasso",
+        "- Buddha",
+        "- Winston Churchill",
+        "- Franklin D. Roosevelt",
+        "- Mark Zuckerberg"
       ];
 
     let rnd = Math.floor(Math.random()*quotes.length);
