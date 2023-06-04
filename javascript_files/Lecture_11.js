@@ -7,7 +7,7 @@ function findAverage(number1, number2){
 
 console.log(findAverage(12,13));
 
-// another way to write function
+// other ways to write function
 let sum = (p,q) => {
     return p+q;
 };
