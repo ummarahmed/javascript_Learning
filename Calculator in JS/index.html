@@ -10,11 +10,13 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+
         }
 
         .innerContainer {
-            background-color: #a5a4a4; /*#5e5858*/
-            display: inline-block;  
+            background-color: #a5a4a4;
+            /*#5e5858*/
+            display: inline-block;
             justify-content: center;
             text-align: center;
             width: 45vh;
@@ -24,13 +26,6 @@
             padding: 13px;
         }
 
-        /*
-        h1 {
-            margin: 10px;
-            display: inline-block;
-            text-align: center;
-        }
-        */
         .input {
             width: 90%;
             height: 35px;
@@ -43,7 +38,7 @@
             padding: 0;
             margin: 20;
             color: white;
-            font-size: 10px;
+            font-size: 20px;
         }
 
         button {
@@ -54,8 +49,20 @@
             text-align: center;
             border-radius: 50%;
             box-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.6);
-  border: none;
+            border: none;
+            font-weight: bold;
+            background-color: #21252a;
+            color: #ffffff;
+        }
 
+        .functionalKeys {
+            background-color: #232409;
+            color: #f5f938;
+        }
+
+        .sumButton {
+            background-color: #d33f00;
+            color: white;
         }
     </style>
 </head>
@@ -65,26 +72,26 @@
     <div class="mainContainer">
         <div class="innerContainer">
             <input class="input" type="text" value="Initial Value" readonly dir="rtl">
-            <button>AC</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
+            <button class="functionalKeys">AC</button>
+            <button class="functionalKeys">DEL</button>
+            <button class="functionalKeys">%</button>
+            <button class="functionalKeys">/</button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
-            <button>x</button>
+            <button class="functionalKeys">x</button>
             <button>4</button>
             <button>5</button>
             <button>6</button>
-            <button>+</button>
+            <button class="functionalKeys">+</button>
             <button>1</button>
             <button>2</button>
             <button>3</button>
-            <button>-</button>
+            <button class="functionalKeys">-</button>
             <button>±</button>
             <button>0</button>
             <button>.</button>
-            <button>=</button>
+            <button class="sumButton">=</button>
 
         </div>
     </div>
